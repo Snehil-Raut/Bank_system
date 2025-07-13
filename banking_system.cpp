@@ -256,7 +256,7 @@ Bank::Bank(){
 // return type is Account
 Account Bank::OpenAccount(string fname, string lname, double balance){
     Account openacc(fname, lname, balance);
-    accounts[openacc.getAccountNumber()] = openacc; // Store account in map]
+    accounts[openacc.getAccountNumber()] = openacc; // Store account in map
     ofstream ofs("account.txt", ios::app);
     if (!ofs) {
         cerr << "Error opening file for writing." << endl;
